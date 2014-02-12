@@ -1,2 +1,1 @@
-My Personal Blog
-====
+Coming soon ;)
