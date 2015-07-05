@@ -1,0 +1,20 @@
+{:site-title       "Practice of Programming"
+ :author           "Aliaksandr Kazlou"
+ :description      "Programming as a craft"
+ :site-url         "http://akazlou.com/"
+ :post-root        "posts"
+ :tag-root         "tags"
+ :page-root        "pages"
+ :blog-prefix      nil
+ :rss-name         "feed.xml"
+ :rss-filters      ["cryogen"]
+ :recent-posts     5
+ :post-date-format "yyyy-MM-dd"
+ :sass-src         nil
+ :sass-dest        nil
+ :theme            "darkly"
+ :resources        ["img"]
+ :keep-files       [".git"]
+ :disqus?          true
+ :disqus-shortname "aliaksandrkazlou"
+ :ignored-files    [#"\.#.*" #".*\.swp$"]}

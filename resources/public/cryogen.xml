@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom'>
+<channel>
+<atom:link href='http://akazlou.com/' rel='self' type='application/rss+xml'/>
+<generator>
+clj-rss
+</generator>
+<title>
+Practice of Programming
+</title>
+<link>
+http://akazlou.com/
+</link>
+<description>
+Programming as a craft
+</description>
+<lastBuildDate>
+Sun, 05 Jul 2015 23:03:38 +0200
+</lastBuildDate>
+</channel>
+</rss>
