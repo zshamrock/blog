@@ -4,3 +4,8 @@ footer {
     padding-top: 75px;
     padding-bottom: 30px;
 }
+
+blockquote {
+    font-size: 15px;
+    font-style: italic;
+}

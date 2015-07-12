@@ -58,12 +58,14 @@
 
         <div class="col-md-3">
             <div id="sidebar">
+                {% if sidebar-pages|not-empty %}
                 <h3>Links</h3>
                 <ul id="links">
                     {% for page in sidebar-pages %}
                     <li><a href="{{page.uri}}">{{page.title}}</a></li>
                     {% endfor %}
                 </ul>
+                {% endif %}
                 {% if latest-posts|not-empty %}
                 <div id="recent">
                     <h3>Recent Posts</h3>

@@ -3,6 +3,4 @@
  :page-index 0
  :navbar? true}
 
-## Write something about something
-
-Work in progress
+Coming soon, in the meanwhile you can read [Is programming language that important?](/posts/2015-07-12-is-lang-that-important.html).
