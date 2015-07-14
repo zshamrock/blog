@@ -1,4 +1,4 @@
-{:title "Is programming language that important?"
+{:title "Is programming language important?"
 :layout :post
 :tags ["abstract"]
 }
@@ -70,7 +70,7 @@ One of the easiest way to practice a new language is to use coding challenges pl
   - [Codewars](http://www.codewars.com/)
   - [4Clojure](https://www.4clojure.com/)
 
-Moreover stay with the language which is fun and joy for you to work. The one which makes you happy, and allows you deliver the result for the customer or the product you build faster and with better quality. 
+Moreover stay with the language which is fun and joy for you to work. The one which makes you happy, and productive, and allows you deliver the result for the customer or the product you build faster and with better quality. 
 
 As Agile says: 
 > Working software is the primary measure of progress. 
