@@ -12,7 +12,7 @@ So whenever you need to choose a new tool for the product or just study it, it i
 4. do you need all of the features of the tool or only a smaller subset of it, i.e. are you ready to pay extra for the features you are not using
 5. how the tool is different or similar to other tools from the same category (to link together all the pieces of the knowledge you have, to help your brain to build stronger connections)
 
-Point #3 might look like point #2, but it is more about how it works or why it was that done way, as point #2 is more about "what are they".
+Point #3 might look like point #2, but it is more about how it works or why it was done that way, as point #2 is more about "what are they".
 
 A good analogy to this can be found in algorithmic problems: if you know the constraint of your problem (size of the expected data input, restrictions on the upper value bound, memory limits, time constraints) you might want to go with O( N^2 ) solution instead of O(N log N), like using simple sorting, instead of quicksort or heapsort on the array of 10 elements, as you will get the same result (might be even faster), but with more simple, reliable and maintainable implementation, and simplicity matters a lot.
 
