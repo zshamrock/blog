@@ -14,7 +14,7 @@
  :sass-dest        nil
  :theme            "darkly"
  :resources        ["img"]
- :keep-files       [".git"]
+ :keep-files       [".git", "google83712e9ddd7b9397.html"]
  :disqus?          true
  :disqus-shortname "akazlou"
  :ignored-files    [#"\.#.*" #".*\.swp$"]}
