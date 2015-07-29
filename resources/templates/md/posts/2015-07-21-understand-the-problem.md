@@ -1,4 +1,4 @@
-{:title "Understand the problem"
+{:title "Understanding the problem"
 :layout :post
 :tags ["architectural thinking" "distributed systems"]
 }
