@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+@import url("http://fonts.googleapis.com/css?family=Noto+Sans:400,700italic,700,400italic|Droid+Sans+Mono|Noto+Serif:400,700italic,400italic,700");
 /*!
  * bootswatch v3.3.5
  * Homepage: http://bootswatch.com
@@ -1086,7 +1086,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.42857143;
   color: #333333;
@@ -1188,7 +1188,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   line-height: 1.1;
   color: inherit;
@@ -1536,7 +1536,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: "Droid Sans Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 code {
   padding: 2px 4px;
@@ -6041,7 +6041,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6159,7 +6159,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6799,7 +6799,7 @@ button.close {
   }
 }
 .navbar {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .navbar-nav,
 .navbar-form {
@@ -6841,13 +6841,13 @@ button.close {
   }
 }
 .btn {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 legend {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .input-group-addon {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .nav .open > a,
 .nav .open > a:hover,
@@ -6855,14 +6855,14 @@ legend {
   border: 1px solid #ddd;
 }
 .pagination {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .pagination-lg > li > a,
 .pagination-lg > li > span {
   padding: 14px 24px;
 }
 .pager {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .pager a {
   color: #333333;
@@ -6890,7 +6890,7 @@ legend {
   text-decoration: underline;
 }
 .label {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 .label-default {
@@ -6900,7 +6900,7 @@ legend {
 .badge {
   padding: 1px 7px 5px;
   vertical-align: 2px;
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 .panel {
