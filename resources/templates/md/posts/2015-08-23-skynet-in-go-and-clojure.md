@@ -10,7 +10,7 @@ Why Go and Clojure? These are 2 languages in the moment I am more interested, op
 
 ### Puzzle
 
-The puzzle I will talk about is the following one [Skynet](https://www.codingame.com/ide/1838509919700ece68cf28e8c639f9d8b7fa87b). I got a permission from Codingame team to publish the solutions online. Although the main idea is to focus on the languages rather than algorithm. Below there are annotated solution in Go and annotated solution in Clojure. Worth to mention that I've solved the problem with Go first, and then with Clojure later, so it is reflected in the annotations for each of the solution.
+The puzzle I will talk about is the following one [Skynet](https://www.codingame.com/ide/1838509919700ece68cf28e8c639f9d8b7fa87b). I got a permission from the Codingame team to publish the solution of this puzzle online. Although the main idea is to focus on the languages rather than algorithm. Below there are annotated solution in Go and annotated solution in Clojure. Worth to mention that I've solved the problem with Go first, and then with Clojure later, so it is reflected in the annotations for each of the solution.
 
 ### Algorithm in plain English
 
@@ -79,7 +79,7 @@ func main() {
         // SI: The index of the node on which the Skynet agent is positioned this turn
         var SI int
         fmt.Scan(&SI)
-        // here I realized while working on Clojure version of the solution that I could use set instead. Just studied slices at the moment. The "set" can be implemented as a map with value type bool, as stays in Effective Go http://golang.org/doc/effective_go.html#maps
+        // I realized while working on Clojure version of the solution that I could use set instead. Just studied slices at the moment. The "set" can be implemented as a map with value type bool, as stays in Effective Go http://golang.org/doc/effective_go.html#maps
         visited := make([]bool, N)
         visited[SI] = true
         // and use list as a queue implementation
@@ -141,7 +141,7 @@ func main() {
 
 (defrecord Link [from to])
 
-; I could not to use atom at all, but then the main code would be even more difficult to understand
+; I could have a version of the solution without using atoms, but then the main code would be even more difficult to understand
 ; {4 [5 8 1], 5 [4], 3 [1 9], 1 [3 4], 8 [4], 9 [3]}
 (def net (atom {}))
 
@@ -186,7 +186,7 @@ func main() {
             nodes-to-routes (fn [nodes] (map #(map->Route {:start-node % :current-node %}) nodes))
             visited #{SI} 
             reachable-agent-next-nodes (get @net SI)
-            ; use PersistentQueue/EMPTY to work with queue in Clojure, and use peek, pop and conj to work with a queue
+            ; use PersistentQueue/EMPTY to work with queue in Clojure, and use peek, pop and conj to modify/inspect the queue
             routes (apply conj (clojure.lang.PersistentQueue/EMPTY) (nodes-to-routes reachable-agent-next-nodes))]
         (loop [routes routes visited visited]
           (let [route (peek routes) 
@@ -210,24 +210,24 @@ func main() {
 
 ### Conclusion
 
-- I found that Clojure program really easy could become unreadable, so it is a best practice there (as in the other languages as well, but if you could skip this step in other languages, in Clojure, if you want to keep your code clean and readable it is a must to do) to extract logic into smaller functions, which are easier to understand and easier to test and work with from REPL, and think carefully about local `let` names.
+- I found that Clojure program really easy could become unreadable, so it is a best practice there (as in the other languages as well, but if you could skip this step in other languages, which you should not do, in Clojure, if you want to keep your code clean and readable it is a must to do) to extract logic into smaller functions, which are easier to understand and easier to test and work with from REPL, and think carefully about local `let` names
 
 
-- Writing loops in Clojure feels more work comparing to Go.
+- Writing loops in Clojure feels more work comparing to Go
 
 
-- Converting solution directly from procedural language to functional language, does not work well, as they have different paradigm and techniques, so it would be faster to write the Clojure version from the beginning rather than converting from Go instruction by instruction.
+- Converting solution directly from procedural language to functional language, does not work well, as they have different paradigm and techniques, so it would be faster to write the Clojure version from the beginning rather than converting from Go instruction by instruction
 
 
-- Like the elegance of the Clojure for work with data structures, and using special symbols like ? or ! in the function names.
+- I like the elegance of Clojure for work with data structures, and using special symbols like ? or ! in the function names
 
 
-- Both languages feel pleasant and productive to work with, although each of them have it is own specific workflow. I study and practice with Clojure already for quite a long time, while Go was almost new to me, it is really impressive how easy you can go and start coding with Go. And it doesn't feel like a low level language, it is more close to Java, I would say, than to C, but in practice somewhere between, keeping the right balance. 
+- Both languages feel pleasant and productive to work with, although each of them have it is own specific workflow. I study and practice with Clojure already for quite a long time, while Go was almost new to me, it is really impressive how easy you can go and start coding with Go. And it doesn't feel like a low level language, it is more close to Java, I would say, than to C, but in practice somewhere between, keeping the right balance
 
 
-- Go and Clojure even share some common ideas as well, channels in Go and `core.async` in Clojure to be precise, although this is not covered in this post.
+- Go and Clojure even share some common ideas as well, channels in Go and `core.async` in Clojure to be precise, although this is not covered in this post
 
 
-- Not sure if Clojure is the right language for the algorithmic problems, it is for sure a good language of choice for building production systems, but might not be the best one for the algorithmic competitions.
+- Not sure if Clojure is the right language for the algorithmic problems, it is for sure a good language of choice for building production systems, but might not be the best one for the algorithmic competitions
 
 And as [Codingame](https://www.codingame.com/) says "Keep Coding!".
