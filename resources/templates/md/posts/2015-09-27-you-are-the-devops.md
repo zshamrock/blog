@@ -1,6 +1,6 @@
 {:title "You are the DevOps"
 :layout :post
-:tags ["project management" "practices"]
+:tags ["software craftsmanship" "practices" "full-stack developer"]
 }
 
 Amazon applies the motto **“You build it, you run it”**. Which I firmly believe.
