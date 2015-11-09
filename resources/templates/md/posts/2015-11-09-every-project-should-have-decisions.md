@@ -50,6 +50,8 @@ If you don't have a specific decision yet made regards some of the aspects menti
 
 Keep it simple. Markdown or any human readable/friendly format will do the job. It is good to put a date when you add the entries into the file, like "Sun 1 Nov, 2015".
 
+It should be part of your source code, so every developer can easy access it, and track the history.
+
 **Never change anythig, but append only!** Do not try to change the past, if you have to change the decision you made before, just make a new decision and document it, keeping the old there as well, so the progress, and thinking process will stay visible. 
 
 And this imperfection is what makes this document so valuable.
