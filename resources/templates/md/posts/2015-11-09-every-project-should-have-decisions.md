@@ -1,6 +1,6 @@
 {:title "Every project should have a decisions making file"
 :layout :post
-:tags ["project management"]
+:tags ["craft"]
 }
 
 Have you ever wondered when joining a new project, or exploring a public project on GitHub why specific decisions were made,

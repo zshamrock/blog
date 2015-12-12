@@ -1,6 +1,6 @@
 {:title "Is programming language important?"
 :layout :post
-:tags ["abstract"]
+:tags ["craft"]
 }
 
 Should we as developers to focus more on the language we work with or on more fundamental knowledge and skills?

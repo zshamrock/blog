@@ -1,6 +1,6 @@
 {:title "How to get Groovy or critical character of professional software developer"
 :layout :post
-:tags ["software craftsmanship"]
+:tags ["craft"]
 }
 
 The title of this post might sound a little bit confusing, let me explain.

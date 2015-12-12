@@ -1,6 +1,6 @@
 {:title "Understanding the problem"
 :layout :post
-:tags ["architectural thinking" "distributed systems"]
+:tags ["craft"]
 }
 
 Understand your problem first in order to choose the right tool. 

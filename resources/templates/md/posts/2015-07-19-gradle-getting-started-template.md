@@ -1,6 +1,6 @@
 {:title "Gradle 'Getting Started' template"
 :layout :post
-:tags ["build tool"]
+:tags ["practice"]
 }
 Gradle is an alternative building tool to the widely used Maven. In this post I would not describe what Gradle is and why you should switch to it. It is already very well explained on the official web site [gradle.org](https://gradle.org), personally it feels more concise, developer friendly and productive build tool comparing to Maven.
 
