@@ -1,4 +1,4 @@
-| Data Type | Zero Value | nil assignable? | Comparable? == | Reference Type? | Initialization | %v value |
+| Data Type | Zero Value | nil assignable? | Comparable? == (can be used as a key in a map) | Reference Type? (pass by reference, method declaration on T, not \*T) | Initialization | %v value |
 | int,int16,int32,int64 | 0 | No | Yes | No | x := 10 | 10 |
 | float | 0.0 | No | Yes | No | x := 10.0 | 10.0 |
 | string | "" (empty string) | No | Yes | ? (as they are immutable, do they pass by reference or by value? | x := "10" | 10 |
@@ -8,3 +8,5 @@
 | slice | ? | ? | ? | Yes | a := []{1, 2, 3, 4, 5} or a := make([]int, 0, 5} ? | ? |
 | pointer | nil | Yes | ? | Yes | p := &x | ? |
 | chan | ? | Yes | ? | ? | ch := make(chan) or ch := make(chan, ?) | ? |
+
+*new* or declaration?
