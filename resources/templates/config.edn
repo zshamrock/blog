@@ -1,6 +1,6 @@
-{:site-title       "Practice of Programming"
+{:site-title       "Practice of Programming (daily)"
  :author           "Aliaksandr Kazlou"
- :description      "Programming as a craft"
+ :description      "Programming as a craft (on a daily basis)"
  :site-url         "http://akazlou.com/"
  :post-root        "posts"
  :tag-root         "tags"

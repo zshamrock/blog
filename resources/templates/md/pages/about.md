@@ -14,6 +14,7 @@ Here I write about IT as an industry in general, best practices, about clean cod
 You can find more about me on the following resources:
 - <i class="fa fa-linkedin-square"></i> [LinkedIn](https://nl.linkedin.com/in/akazlou)
 - <i class="fa fa-github-square"></i> [GitHub](https://github.com/zshamrock)
+- <i class="fa fa-twitter-square"></i> [Twitter](https://twitter.com/akazlou)
 - [Codingame](https://www.codingame.com/profile/ae433b2b7200a27dc94b3abe13ee3b2c803079)
 - [HackerRank](https://www.hackerrank.com/akazlou)
 
