@@ -97,12 +97,12 @@ So, it is not about "either or", but instead the symbiosis of two useful tools.
 
 ### I am not a DevOps engineer
 
-As by reading this post and probably a few others, you might decide that I am switching my career into DevOps direction :). Nope. And on the daily basis I do heavy :) backend development and coding.
+As by reading this post and probably a few others, you might decide that I am switching my career into DevOps direction :). Nope. And on the daily basis I do backend development and coding.
 
 I am considering myself as a software engineer, whatever it would mean. But I understand it as be able to work on any layer of the application, be responsible for the quality and architecture of the product, and balance between business needs and technical passion. I am just curious, and product development is not just about coding, it is much more. How about marketing, for example? :) 
 
 And when you are a small team (or when building a personal project), there are no other options, but being professional and experienced in complete product architecture and lifecycle, coming from database design, high-level architecture and finishing with the deployment, doing the development (actual coding) in between. And I really enjoy doing this.
 
-And it is not that uncommon to even use multiple different languages (and Ansible, can be considered, just as another language) to develop different part of the product. This is the reality and dynamics of the current world, which is demanding, but also a rewarding at the same time.
+And it is not that uncommon to even use multiple different languages (and Ansible, can be considered, just as another language) to develop different parts of the product. This is the reality and dynamics of the current world, which is demanding, but also a rewarding at the same time.
 
 Cheers!
