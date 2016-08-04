@@ -1,4 +1,4 @@
-{:title "Spock 5 best practices"
+{:title "Spock 7 best practices"
 :layout :post
 :tags ["practice"]
 }
@@ -82,7 +82,29 @@ For the data tables, another alternative to provide the values is to use `item <
 
 The only exception probably, where the data values are calculated dynamically, like using all possible enum values, for example.
 
-### Practice #5: Do not mock classes
+### Practice #5: Name your unit tests ending with `Spec`
+
+Prefer naming your unit tests end with `Spec`, i.e.:
+
+```
+class MaxSpec extends Specification {
+...
+}
+```
+
+### Practice #6: Name your integration tests ending with `ITSpec`
+
+Prefer naming your integration tests end with `ITSpec`, i.e.:
+
+```
+class TimeMachinePersistenceITSpec extends Specification {
+...
+}
+```
+
+So, it allows easily distinguish between which tests are unit tests and which tests are integration tests by just simply looking at the class name.
+
+### Practice #7: Do not mock classes
 
 It is not strictly related to the Spock framework, but in general to any testing frameworks, or testing strategies. Yes, Spock allows you to mock classes by having `cglib` in the classpath, but better to not do so.
 
