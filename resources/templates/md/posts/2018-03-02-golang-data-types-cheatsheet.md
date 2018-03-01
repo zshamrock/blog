@@ -9,8 +9,8 @@ In that regards the two languages I focus on apart from the main language (which
 
 I think you will agree if you are familiar with these languages that they bring new paradigms to the area of the programming languages. Well, yes both of them have inspiration of the languages existed before, but if you are young enough (as I am) to not catch them, the ideas in these language then feel new. Also these languages have a few interesting ideas by itself, which other languages didn't have.
 
-I use Clojure these days mostly for solving puzzles on the CodinGame.
-And Go for writing various CLI utilities for the projects I am working on. Many of those utilities are very much project specific, so not possible to open source them or share. But some of the ideas are, and currently I implement some of them in the vmx tool.
+I use Clojure these days mostly for solving puzzles on the <a href="https://www.codingame.com/profile/ae433b2b7200a27dc94b3abe13ee3b2c803079" target="_blank">CodinGame</a>.
+And Go for writing various CLI utilities for the projects I am working on. Many of those utilities are very much project specific, so not possible to open source them or share. But some of the ideas are, and currently I implement some of them in the <a href="https://github.com/zshamrock/vmx" target="_blank">vmx</a> tool (which I will write its own post about).
 
 On the radar languages which also look interesting and have some demand on the market are Rust and Racket. I am planning to have some look into Racket this year. No plans so far regards Rust.
 
@@ -20,14 +20,7 @@ So here below is the summary of the Go data types I came with. I hope it is usef
 
 ### Go Data Types Cheatsheet
 
-Preview:
-https://docs.google.com/spreadsheets/d/1AqSlVvLtyLc62BIe4hc0X-NblMFfFrg9bvlGzSxCy5s/preview
-
-Download latest PDF version:
-https://docs.google.com/spreadsheets/d/1AqSlVvLtyLc62BIe4hc0X-NblMFfFrg9bvlGzSxCy5s/export?format=pdf
-
-Explore the possibilities of the embedded preview: https://gist.github.com/tzmartin/1cf85dc3d975f94cfddc04bc0dd399be
-
+Also available as <a href="https://docs.google.com/spreadsheets/d/1AqSlVvLtyLc62BIe4hc0X-NblMFfFrg9bvlGzSxCy5s/preview" target="_blank"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>preview</a>, as well as download-able as <a href="https://docs.google.com/spreadsheets/d/1AqSlVvLtyLc62BIe4hc0X-NblMFfFrg9bvlGzSxCy5s/export?format=pdf" target="_blank"><span class="glyphicon glyphicon-cloud-download" aria-hidden="true"></span>PDF</a>.
 
 <table class="table table-hover">
 <thead>
@@ -50,7 +43,7 @@ be used as the key in the map)
 <th scope="col">
 Reference Type?<br/>
 (pass
-by "reference" [1])
+by "reference" <a href="#l01">[1]</a>)
 </th>
 <th scope="col">
 Declaration
@@ -199,7 +192,7 @@ or <br/>
 a := [...]{99: -1}
 (which will create the array of 100 elements, with last one
 initialized to -1, while the rest to their zero value, 0 in the
-case of the int-s) [2]
+case of the int-s) <a href="#l02">[2]</a>
 </td>
 <td>
 [10 20 30]<br/>
@@ -446,7 +439,7 @@ comparison is with nil)
 </td>
 <td>
 Yes<br/>
-[3]
+<a href="#l03">[3]</a>
 </td>
 <td>
 var f func(int) int
@@ -490,7 +483,7 @@ Yes
 </td>
 <td>
 No (only legal comparison
-is with nil)<br/>
+is with nil) <a href="#l04">[4]</a><br/>
 </td>
 <td>
 No
@@ -586,13 +579,30 @@ A Builder needs no initialization, ready to use
 </table>
 <br/>
 
-[1]
+<p>
+<span id="l01">[1]</span> Variables of these types are passed by value, as everything in the Go, although because they are “reference” types, which mean they hold the pointer (reference) to the underlying data structure, so it means that the pointer gets copied (i.e. alias is created), which allows to make the modifications to the underlying data structure pointer points (references) to.
+</p>
 
-[2]
+<p>
+<span id="l02">[2]</span> Another interesting example (taken from The Go Programming Language book): 
+```
+type Currency int 
+const ( 
+    USD Currency = iota 
+    EUR 
+    GBP 
+    RMB) 
+symbol := [...]string{USD: “$”, EUR: “€”, “GBP”: “£”, “RMB”: “¥”}"
+```
+</p>
 
-[3]
+<p>
+<span id="l03">[3]</span> It said that the func is the reference type, and mentions it is possible to affect the original function, although it is not clear how. Any ideas?
+</p>
 
-[4]
+<p>
+<span id="l04">[4]</span> Although it is possible to compare interfaces with each other, it might fail at runtime when interface type (dynamic types are the same) represents the non comparable type, then it fails with panic. So compare interface values only if you are certain they contain dynamic values of comparable types.
+</p>
 
 ****
 

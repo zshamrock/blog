@@ -13,7 +13,7 @@
  :sass-src         nil
  :sass-dest        nil
  :theme            "darkly"
- :resources        ["img"]
+ :resources        ["img", "fonts"]
  :keep-files       [".git", "google83712e9ddd7b9397.html"]
  :disqus?          true
  :disqus-shortname "akazlou"
