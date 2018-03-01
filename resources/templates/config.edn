@@ -17,4 +17,4 @@
  :keep-files       [".git", "google83712e9ddd7b9397.html"]
  :disqus?          true
  :disqus-shortname "akazlou"
- :ignored-files    [#"\.#.*" #".*\.swp$"]}
+ :ignored-files    [#"\.#.*" #".*\.swp$" #".*md~"]}
