@@ -3,7 +3,7 @@
 :tags ["go" "development"]
 }
 
-I see the value of learning and practicing new programming languages. Although the value is when the new language introduces the different paradigm than the languages you already know, and change/challenge they way you think or program. Also the important aspect is the market share for the language, i.e. whether there is the demand on the market for such skills.
+I see the value of learning and practicing <a href="/posts/2015-07-12-is-lang-important.html" target="_blank">new programming languages</a>. Although the value is when the new language introduces the different paradigm than the languages you already know, and change/challenge they way you think or program. Also the important aspect is the market share for the language, i.e. whether there is the demand on the market for such skills.
 
 In that regards the two languages I focus on apart from the main language (which is Java) which I use for day to day development these are: Go and Clojure.
 
@@ -14,7 +14,7 @@ And Go for writing various CLI utilities for the projects I am working on. Many 
 
 On the radar languages which also look interesting and have some demand on the market are Rust and Racket. I am planning to have some look into Racket this year. No plans so far regards Rust.
 
-And yes, because my main work is still with the Java language, I keep my skills up to date in this area, while I think it is equally important to look around, and extend your professional competencies, and become familiar with new ideas and techniques which even if taken from the different languages, could improve writing the code in Java.
+And yes, because my main work is still with the Java language, I keep my skills up to date in this area, while I think it is equally important to look around, and extend your professional competencies, and become familiar with new ideas and techniques which even if taken from the different languages, could improve writing the code in Java (or your main language at work).
 
 So here below is the summary of the Go data types I came with. I hope it is useful.
 
@@ -606,10 +606,10 @@ symbol := [...]string{USD: “$”, EUR: “€”, “GBP”: “£”, “RMB�
 
 ****
 
-I might have possibly missed some cases, but I believe the most common cases were described.
+I might have possibly missed some cases, but I believe the most common cases were covered.
 Will keep the table updated when new techniques are learnt or discovered in the process of practicing Go.
 
-If you think there is something worth to add, please, share this in comments, I will appreciate!
+If you think there is something worth to add or missing, please, share this in the comments, I will appreciate, and then update the cheatsheet accordingly!
 
 Thanks, guys!
 
