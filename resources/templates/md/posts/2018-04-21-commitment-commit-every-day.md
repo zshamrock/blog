@@ -3,6 +3,8 @@
 :tags ["craft" "development" "practice"]
 } 
 
+Decisions done in the morning or when not tired tend to be the better one, as well as the more will power allows to dig deeper into the unknown areas.
+
 TODO: Include the image of the 3 months continuos commit history from the GitHub, and 2 released projects: vmx and dynosql!
 
 And start the work on the dynoman already!
