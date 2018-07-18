@@ -3,8 +3,6 @@
 :tags ["craft" "development" "practice"]
 } 
 
-Decisions done in the morning or when not tired tend to be the better one, as well as the more will power allows to dig deeper into the unknown areas.
-
 TODO: Include the image of the 3 months continuos commit history from the GitHub, and 2 released projects: vmx and dynosql!
 
 And start the work on the dynoman already!
@@ -49,6 +47,10 @@ Even though there could be lack of time and knowledge it doesn't (and should not
 Make it work, make it right, make it fast!
 
 Also over time the new more clear and specific requirements/features crystallize by using the tool, or being inspired by something new encountered.
+
+### Challenge
+
+When the only you have only couple of minutes each day, or at most hour, it takes time to come back to the focus, and resume the work which has been left. Specifically this is the challenge when using the different lang/tech different from the main used at work. And even more this is the challenge when using the different lang/tech and resume the work on the project which you have not touched for weeks. So it is all about the focus and flow, which requires time and energy. 
 
 ****
 
