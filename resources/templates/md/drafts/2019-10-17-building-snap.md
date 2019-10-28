@@ -1,10 +1,15 @@
+{:title "Building SNAP"
+:layout :post
+:tags ["practice" "snap"]
+}
+
 Story of building Go snap using `personal-files` plug.
 
 Make short up to the point and show the latest working snapcraft.yaml. Where to place the yaml, and how run and publish the app. How to install it locally.
 
 And the difference between running it on Debian and Ubuntu (display the options which display the supported confinement).
 
-## snapcraft.yaml
+### snapcraft.yaml
 
 Here is the functional [snapcraft.yaml](https://github.com/zshamrock/dynocsv/blob/master/snap/snapcraft.yaml) for building local Go application. 
 
@@ -56,7 +61,7 @@ apps:
 
 ```
 
-## On Debian
+### On Debian
 
 ```
 $ snap debug confinement
@@ -77,7 +82,7 @@ From the above output, even the `strict` confinement is declared in the `snapcra
 
 So when you install the snap locally `snap install --dangerous dynocsv_1.0.0_amd64.snap`, and run it, it will work fine without any issues, which give the false sense of correctness of your `snapcraft.yaml`. So you always need to test on the system which has full confinement support.
 
-## On Ubuntu
+### On Ubuntu
 
 Below commands are running on AWS EC2 Ubuntu 18.04.2 LTS instance (ami-09ca8a080b6699260).
 
@@ -97,7 +102,7 @@ udev:                 device-cgroup-v1 tagging
 
 And here the full confinement support is enabled (`support-level: full`), and all 3 `confinement-options: classic devmode strict` are enabled. So if install the above snap on this instance, it will fail, as expected. 
 
-## Manually connect the plug
+### Manually connect the plug
 
 
 ```
@@ -116,7 +121,7 @@ personal-files   dynocsv:aws-config-credentials  -         -
 removable-media  dynocsv:removable-media         -         -
 ```
 
-`home` and `network` connections (other names are plugs, interfaces) are connected automatically by default. Which is not the case for the `personal-files` connection, which has the corresponding alias/plug: `aws-config-credentials` as per [](personal-files interface documentation), and has to be connected manually:
+`home` and `network` connections (other names are plugs, interfaces) are connected automatically by default. Which is not the case for the `personal-files` connection, which has the corresponding alias/plug: `aws-config-credentials` as per [personal-files interface documentation](https://snapcraft.io/docs/personal-files-interface), and has to be connected manually:
 
 ```
 $ sudo snap connect dynocsv:aws-config-credentials
