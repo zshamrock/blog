@@ -1,0 +1,126 @@
+    1  ls
+    2  pwd
+    3  cd /
+    4  ls
+    5  find /usr -name ="libX11*"
+    6  sudo find /usr -name ="libX11*"
+    7  sudo yum install libX11.x86_64 
+    8  sudo find /usr -name ="libX11*"
+    9  sudo find /usr -name "libX11*"
+   10  sudo find /usr -name "libgtk*"
+   11  yum search libgtk
+   12  yum search libgtk-2.so
+   13  yum search libgtk-x11
+   14  sudo find /usr -name "libgtk*"
+   15  sudo yum install gtk2.x86_64 
+   16  sudo find /usr -name "libgtk*"
+   17  yum search corretto
+   18  yum search all corretto
+   19  cd /etc/yum.repos.d/
+   20  ls
+   21  vim amzn2-core.repo 
+   22  vim amzn2-extras.repo 
+   23  yum install https://d3pxv6yz143wms.cloudfront.net/8.232.09.1/java-1.8.0-amazon-corretto-devel-1.8.0_232.b09-1.x86_64.rpm
+   24  sudo yum install https://d3pxv6yz143wms.cloudfront.net/8.232.09.1/java-1.8.0-amazon-corretto-devel-1.8.0_232.b09-1.x86_64.rpm
+   25  git
+   26  yum install git
+   27  sudo yum install git
+   28  cd
+   29  ls
+   30  mkdir tools
+   31  cd tools
+   32  git clone https://github.com/zshamrock/dynoman.git
+   33  cd dynoman/
+   34  ls
+   35  ./gradlew classes
+   36  curl -s "https://get.sdkman.io" | bash
+   37  sudo yum install xauth
+   38  sudo vim /etc/ssh/sshd_config 
+   39  cd tools
+   40  cd dynoman/
+   41  sdk install gradle
+   42  ./gradlew classess
+   43  ./gradlew classes
+   44  gradle tasks
+   45  gradle classes
+   46  echo $DISPLAY 
+   47  gradle run
+   48  export JAVA_TOOL_OPTIONS="-Djdk.gtk.verbose=true -Djavafx.verbose=true"
+   49  gradle run
+   50  yum search swrast
+   51  yum search all swrast
+   52  yum provide swrast
+   53  yum provides swrast
+   54  yum provides swrast_dri.so
+   55  sudo yum update
+   56  find /usr -name "swarst*"
+   57  sudo find /usr -name "swarst*"
+   58  export LIBGL_DEBUG=verbose
+   59  history
+   60  export JAVA_TOOL_OPTIONS="-Djdk.gtk.verbose=true -Djavafx.verbose=true"
+   61  cd tools
+   62  ls
+   63  cd dynoman/
+   64  gradle run
+   65  sudo yum search all dri
+   66  sudo yum search dri
+   67  sudo yum install mesa-libGL.x86_64
+   68  glxinfo
+   69  sudo yum install glx-utils.x86_64 
+   70  glxinfo
+   71  sudo yum install mesa-dri-drivers.x86_64 
+   72  glxinfo
+   73  gradle run
+   74  xterm
+   75  sudo yum install xterm
+   76  xterm 
+   77  vim /etc/ssh/sshd_config 
+   78  sudo vim /etc/ssh/sshd_config 
+   79  xterm
+   80  echo $DISPLAY
+   81  gedit
+   82  xterm
+   83  ls -al
+   84  vim .Xauthority 
+   85  echo $DISPLAy
+   86  echo $DISPLAY
+   87  uname -a
+   88  pwd
+   89  xterm
+   90  cd tools/
+   91  cd dynoman/
+   92  histort
+   93  history
+   94  export JAVA_TOOL_OPTIONS="-Djdk.gtk.verbose=true -Djavafx.verbose=true"
+   95  export LIBGL_DEBUG=verbose
+   96  gradle run
+   97  sudo yum install libXtst.x86_64
+   98  gradle run
+   99  yum search font
+  100  gradle run | grep font
+  101  yum search font | grep font
+  102  sudo yum install xorg-x11-fonts-100dpi.noarch 
+  103  gradle run
+  104  fc-list
+  105  sudo yum install google-noto-fonts-common.noarch 
+  106  sudo yum install google-noto-sans-fonts.noarch 
+  107  sudo yum install google-noto-serif-fonts.noarch 
+  108  fc-list
+  109  cd tools
+  110  cd dynoman/
+  111  history
+  112  export JAVA_TOOL_OPTIONS="-Djdk.gtk.verbose=true -Djavafx.verbose=true"
+  113  export LIBGL_DEBUG=verbose
+  114  gradle run
+  115  yum search xdg-open
+  116  sudo yum install xdg-utils.noarch 
+  117  xdg-open 
+  118  xdg-open http://oz.by
+  119  sudo yum install icedtea-web.x86_64 
+  120  xdg-open http://oz.by
+  121  sudo yum remove icedtea-web.x86_64 
+  122  xdg-open 
+  123  xdg-open http://oz.by
+  124  yum search browser
+  125  history
+  126  history > history.txt

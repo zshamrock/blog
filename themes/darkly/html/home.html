@@ -1,0 +1,20 @@
+{% extends "/html/base.html" %}
+{% block content %}
+<div id="post">
+    {% include "/html/post-content.html" %}
+    {% if disqus? %}
+    <div id="comments">
+        <a href="{{post.uri}}#disqus_thread">View Comments</a>
+    </div>
+    {% endif %}
+
+    <div id="prev-next">
+        {% if post.next %}
+        <a href="{{post.next.uri}}">&laquo; {{post.next.title}}</a>
+        {% endif %}
+        {% if post.prev %}
+        <a class="right" href="{{post.prev.uri}}">{{post.prev.title}} &raquo;</a>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

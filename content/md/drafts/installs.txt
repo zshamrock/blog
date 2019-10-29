@@ -1,0 +1,19 @@
+    7  sudo yum install libX11.x86_64 
+   15  sudo yum install gtk2.x86_64 
+   23  yum install https://d3pxv6yz143wms.cloudfront.net/8.232.09.1/java-1.8.0-amazon-corretto-devel-1.8.0_232.b09-1.x86_64.rpm
+   24  sudo yum install https://d3pxv6yz143wms.cloudfront.net/8.232.09.1/java-1.8.0-amazon-corretto-devel-1.8.0_232.b09-1.x86_64.rpm
+   26  yum install git
+   27  sudo yum install git
+   37  sudo yum install xauth
+   41  sdk install gradle
+   67  sudo yum install mesa-libGL.x86_64
+   69  sudo yum install glx-utils.x86_64 
+   71  sudo yum install mesa-dri-drivers.x86_64 
+   75  sudo yum install xterm
+   97  sudo yum install libXtst.x86_64
+  102  sudo yum install xorg-x11-fonts-100dpi.noarch 
+  105  sudo yum install google-noto-fonts-common.noarch 
+  106  sudo yum install google-noto-sans-fonts.noarch 
+  107  sudo yum install google-noto-serif-fonts.noarch 
+  116  sudo yum install xdg-utils.noarch 
+  119  sudo yum install icedtea-web.x86_64 
