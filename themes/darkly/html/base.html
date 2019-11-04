@@ -3,10 +3,11 @@
 <head>
     <meta charset="utf-8"/>
     <title>{{title}}{% block subtitle %}{% endblock %}</title>
+    <link rel="canonical" href="{{site-url}}{{uri}}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% style "css/readable-bootstrap.min.css" %}
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/default.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/default.min.css">
     {% style "css/screen.css" %}
     <!-- Google Analytics -->
     <script>
@@ -38,14 +39,14 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li {% if home %} class="active" {% endif %}><a href="{{index-uri}}">Home</a></li>
+                <li
+                {% if archives %} class="active" {% endif %}><a href="{{archives-uri}}">Archives</a></li>
                 {% for nav-page in navbar-pages %}
                 <li
                 {%ifequal page.uri nav-page.uri %} class="active" {% endifequal %}>
                 <a href="{{nav-page.uri}}">{{nav-page.title}}</a>
                 </li>
                 {% endfor %}
-                <li
-                {% if archives %} class="active" {% endif %}><a href="{{archives-uri}}">Archives</a></li>
                 <li><a href="{{rss-uri}}">RSS</a></li>
             </ul>
         </div><!--/.nav-collapse -->
@@ -104,5 +105,7 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 {% script "js/highlight.pack.js" %}
 <script>hljs.initHighlightingOnLoad();</script>
+{% if post.klipse %} {{post.klipse|safe}} {% endif %}
+{% if page.klipse %} {{page.klipse|safe}} {% endif %}
 </body>
 </html>
