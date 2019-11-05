@@ -7,7 +7,7 @@ Recently I was trying to build the docker image for running my JavaFX [DynamoDB 
 
 As I wanted it to be distributed over Docker and publish the image into the [Docker Hub](https://hub.docker.com/) I didn't want the image to be based on the Oracle JDK 8 due to the licensing issues but use OpenJDK instead.
 
-As JavaFX has been removed from Oracle/OpenJDK starting from version 9 as the separate distribution, I decided the image to be based on the Amazon Corretto JDK (although I have not researched whether BellSoft/Liberica JDK or Azul/ZuluJDK or AdoptOpenJDK come with the JavaFX within it as directly from Docker Hub). There will be the separate post highlighting the state of JavaFX within various OpenJDK distributions.
+As JavaFX has been removed from Oracle/OpenJDK starting from version 9 as the separate distribution, I decided the image to be based on the Amazon Corretto JDK (although I have not researched whether BellSoft/Liberica JDK or Azul/ZuluJDK or AdoptOpenJDK come with the JavaFX within it as directly from Docker Hub). There will be a separate post highlighting the state of JavaFX within various OpenJDK distributions.
 
 Also, there are solutions to install the openjfx distribution on top of the OpenJDK 11, although this is something I have to definitely investigate later when building the self-contained application distribution.
 
@@ -63,7 +63,7 @@ Loaded /usr/lib/jvm/java-1.8.0-amazon-corretto/jre/lib/ext/../amd64/libjavafx_fo
 Loaded /usr/lib/jvm/java-1.8.0-amazon-corretto/jre/lib/ext/../amd64/libdecora_sse.so from relative path
 ```
 
-Class `com.sun.glass.ui.gtk.GtkApplication` (is also where `jdk.gtk.verbose` is used) is the good place to debug the issue with loading Gtk if the application fails to start. Interesting that this class is only available in the OpenJFX implementation, but not in the OracleJDK.
+Class `com.sun.glass.ui.gtk.GtkApplication` (is also where `jdk.gtk.verbose` is used) is a good place to debug the issue with loading Gtk if the application fails to start. Interesting that this class is only available in the OpenJFX implementation, but not in the OracleJDK.
 
 ### Configure SSH client and server
 
