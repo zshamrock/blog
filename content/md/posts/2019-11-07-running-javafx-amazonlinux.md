@@ -1,6 +1,6 @@
 {:title "Running JavaFX application on Amazon Linux remotely over SSH using Amazon Correto"
 :layout :post
-:tags ["javafx" "openjdk" "aws"]
+:tags ["javafx" "openjdk" "aws" "dynamodb"]
 }
 
 Recently I was trying to build the docker image for running my JavaFX [DynamoDB Manager](https://github.com/zshamrock/dynoman) application. While it proves to be possible (although it looks like you have to apply various techniques to make it work on all platforms: Linux, Windows, and macOS) I was currently focused on the Linux platform only.
