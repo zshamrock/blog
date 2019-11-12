@@ -3,15 +3,15 @@
 :tags ["practice" "snap"]
 }
 
-In my spare I develop open source tools for various topics. Mainly the tools which support the project I am working on. Depends on the type of the project there are different distribution strategies.
+In my spare, I develop open-source tools for various topics. Mainly the tools which support the project I am working on. Depends on the type of project there are different distribution strategies.
 
-One of the distribution option is to build and publish the snap.
+One of the distribution options is to build and publish the snap.
 
 Documentation is relatively good, but not complete, and not always up to date, so below is the up to date (at the moment of writing) snap declaration and building.
 
 ### snapcraft.yaml
 
-Here is the functional [snapcraft.yaml](https://github.com/zshamrock/dynocsv/blob/master/snap/snapcraft.yaml) for building local Go application. 
+Here is the functional [snapcraft.yaml](https://github.com/zshamrock/dynocsv/blob/master/snap/snapcraft.yaml) for building a local Go application. 
 
 ```
 name: dynocsv # you probably want to 'snapcraft register <name>'
@@ -100,7 +100,7 @@ seccomp:              bpf-actlog bpf-argument-filtering kernel:allow kernel:errn
 udev:                 device-cgroup-v1 tagging
 ```
 
-And here the full confinement support is enabled (`support-level: full`), and all 3 `confinement-options: classic devmode strict` are enabled. So if install the above snap on this instance, it will fail, as expected. 
+And here the full confinement support is enabled (`support-level: full`), and all 3 `confinement-options: classic devmode strict` are enabled. So if you install the above snap on this instance, it will fail, as expected. 
 
 ### Manually connect the plug
 
