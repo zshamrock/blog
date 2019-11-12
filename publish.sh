@@ -1,1 +1,1 @@
-scp -r resources/public blog:/home/akazlou/blog
+scp -r public blog:/home/akazlou/blog
