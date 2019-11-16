@@ -3,6 +3,8 @@
 :tags ["craft" "development" "practice"]
 } 
 
+Intro note: I was writing this post long time ago in the Kansas's city airport in my flight back to Belarus.
+
 Note: Original the draft of the article was written on April, 10 2018. But then I decided that 3 months of the commitment, is not enough long period to write about the process.
 
 Decisions done in the morning or when not tired tend to be the better one, as well as the more will power allows to dig deeper into the unknown areas.
