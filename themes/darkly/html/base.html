@@ -44,7 +44,11 @@
                 {% for nav-page in navbar-pages %}
                 <li
                 {%ifequal page.uri nav-page.uri %} class="active" {% endifequal %}>
-                <a href="{{nav-page.uri}}">{{nav-page.title}}</a>
+                <a href="{{nav-page.uri}}">{{nav-page.title}}
+                {% if nav-page.new? %}
+                    <span class="label label-danger">new</span>
+                {% endif %}
+                </a>
                 </li>
                 {% endfor %}
                 <li><a href="{{rss-uri}}">RSS</a></li>
