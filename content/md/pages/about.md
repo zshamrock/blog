@@ -5,6 +5,8 @@
 
 Nice to meet you my reader!
 
+<img src="/img/photo-blog-size.png" alt="Me">
+
 Let me introduce myself: my name is Alex, born in a nice [city](https://www.google.nl/maps/place/Gomel,+Belarus/@52.4229779,30.9860372,12z/data=!4m2!3m1!1s0x46d4699b50faf1a5:0x5ecca30fd2361396?hl=en) of Belarus. I love to build and develop software. And challenge the established so called rules the industry has. I believe in the value of simplicity, clean code, and that small team can achieve the results bigger companies can't do or do running over budget and time. 
 
 I believe in full stack development, and in craftsmanship. My core principles would be: simplicity, automation and visibility - is that keeping the code simple, automating all manual processes, and having the visibility on all the levels of the product development (how it grows, how decisions are made, how the system behaves in production) everything could be achieved much faster, with less cost and better quality.
