@@ -1,2 +1,0 @@
-This year (although I attended it for the first time) the set of topics were the ideal match of the areas which I highly interested. And which are very relevant for the current state of the industry. Very great job by the program committee.
-But if take apart the topics - the venue, food, price is the superb! I can compare it with the many other conferences I attended in Russia (JPoint, Jocker) and Europe (Devoxx, and various smaller local conferences) I would rate JFuture to be the number one right now in terms of organization, topics and the price. Very well done!
