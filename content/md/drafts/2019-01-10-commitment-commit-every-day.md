@@ -58,6 +58,10 @@ Also over time the new more clear and specific requirements/features crystallize
 
 When the only you have only couple of minutes each day, or at most hour, it takes time to come back to the focus, and resume the work which has been left. Specifically this is the challenge when using the different lang/tech different from the main used at work. And even more this is the challenge when using the different lang/tech and resume the work on the project which you have not touched for weeks. So it is all about the focus and flow, which requires time and energy. 
 
+### Motivation
+
+Usually it is pretty easy to start with implementing the idea in the beginning, but overtime if you commit to do some work every day, it simply becomes just another type of job. And here as it is free, and you don't get any money out from it, and the initial excitement is gone (although it comes back from time to time when working on the new interesting feature), but overall it is a job. So the best way I found out to motivate to move forward is to see people start use the tool, or at least I use the tool myself on the daily basis. This is why writing the tool which helps to solve some current problems at the current job is one of the good option to go. As I can share the tool amongst the colleagues, and also use it to improve or speed up solving tasks at the current job. Which is a win-win for everyone.
+
 ****
 
 So, in summary this was the good and rewarding experience, and I will continue doing this, and see where this path directs me. At least I hope by the end of the year I would have a few completed projects, at least used by myself, maybe inside the company or hopefully by the other people outside of my circle.
