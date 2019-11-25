@@ -89,7 +89,7 @@ Although for the long running app it might make more sense to use the [HotSpot](
 
 #### Actions:
 
-- Explore more of the [GraalVM](https://www.graalvm.org/) (in particular latest [GraalVM 19.3 release with JDK 11 Support](https://medium.com/graalvm/graalvm-19-3-0-dfdb6f4ec8ed), announced a few days after the conference) and in the context of native Dynoman GraalVM based distribution
+- Explore more of the [GraalVM](https://www.graalvm.org/) (in particular latest [GraalVM 19.3 release with JDK 11 Support](https://medium.com/graalvm/graalvm-19-3-0-dfdb6f4ec8ed), announced a few days after the conference) and in the context of native [Dynoman](https://github.com/zshamrock/dynoman) GraalVM based distribution
 
 
 ### 5. The State of Reactive Streams by Oleh Dokuka
