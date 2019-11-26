@@ -47,6 +47,10 @@ Also when you go reactive go it all way down, i.e. reactive end to end.
 
 The obvious or immediate bottleneck so far could be access to the data storage in a reactive manner, although many providers starting to provide the reactive implementation of its data access. And also under [R2DBC](https://r2dbc.io/) initiative major DB providers work on the reactive programming API to SQL database.
 
+#### Demo:
+
+[Companion apps fo Efficient Web Applications with Spring Boot 2](https://github.com/snicoll/initializr-stats)
+
 #### Tools: 
 
 Which attracted my attention and worth to explore more.
@@ -109,6 +113,10 @@ Another aspect of choosing the base image is the security, and whether (and how 
 
 The talk by itself might require a separate post, so simply follow the slides.
 
+#### Demo:
+
+[Reactive Streams Emulation](https://github.com/CollaborationInEncapsulation/the-state-of-reactive-streams-emmulations)
+
 #### Actions:
 
 - [RSocket](http://rsocket.io/) has been a while on my radar, might be good to explore it more
@@ -151,6 +159,10 @@ As I understood the idea of the talk/research/project was to explain that simple
 I found that article that looks like the gentle introduction into the topic [An introduction to Q-Learning: Reinforcement Learning](https://blog.floydhub.com/an-introduction-to-q-learning-reinforcement-learning/) and probably more in-depth paper [Combining Case-Based Reasoning andReinforcement Learning for Unit Navigation inReal-Time Strategy Game AI](https://www.cs.auckland.ac.nz/research/gameai/publications/Wender_Watson_ICCBR14.pdf).
 
 One of the points of interest of mine whether this approach (if it is indeed simple enough) could be used to program AI in the [CodinGame multiplayer contests](https://www.codingame.com/multiplayer).
+
+#### Demo:
+
+[Multiplayer Reactive Pac-Man with RSocket ](https://github.com/CollaborationInEncapsulation/reactive-pacman/tree/pacman-ml-qlearning)
 
 ### 8. Exploring Neural Networking with Kotlin Metaprogramming by Amanda Hinchman
 
