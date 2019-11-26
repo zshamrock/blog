@@ -1,1 +1,1 @@
-scp -r public blog:/home/akazlou/blog
+scp -r public blog-debian10:/home/alex/blog
