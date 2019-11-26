@@ -81,7 +81,7 @@ Also, the overall recommendation is to use the latest possible Java version, as 
 
 <img src="/img/hello14.png" alt="OpenJDK Startup - Late 2019 Edition" class="img-thumbnail">
 
-_(credit of the image [OpenJDK Startup - Late 2019 Edition](https://cl4es.github.io/2019/11/20/OpenJDK-Startup-Update.html)_
+_(credit of the image [OpenJDK Startup - Late 2019 Edition](https://cl4es.github.io/2019/11/20/OpenJDK-Startup-Update.html))_
 
 For the long-running application it might make more sense to use the [HotSpot](https://www.oracle.com/technetwork/java/javase/tech/index-jsp-136373.html) option, where you run the application once, and it is running for days/weeks/months/years.
 
@@ -131,6 +131,8 @@ Have to remind to myself that goal is to understand the subject in order to make
 _(credit of the image [xkcd](https://xkcd.com/1179/)_)
 
 Always set up [NTP](http://www.ntp.org/) on the server. It is highly critical for correctness for many distributed systems. Although looks like it is not that straight forward as in these 2 articles explained some common pitfalls and the solutions to them: [Synchronizing Clocks In a Cassandra Cluster Pt. 1 - The Problem](https://blog.rapid7.com/2014/03/14/synchronizing-clocks-in-a-cassandra-cluster-pt-1-the-problem/) and [Synchronizing Clocks In a Cassandra Cluster Pt. 2 - Solutions](https://blog.rapid7.com/2014/03/17/synchronizing-clocks-in-a-cassandra-cluster-pt-2-solutions/) (although they are 5 years old, so things could be improved/changed over this period of time, but at least how it was in the past, and could be still relevant up today).
+
+On the above articles discussed that with the author of the talk Kees Jan Koster he replied that advices mentioned in the article are excellent one for the database clusters, although for a more general use-case, such as bunch of microservices in application containers, this setup seems overkill. And depending on the system design 30ms could be a plenty precise.
 
 Always use UTC. And convert to UTC as soon as possible, and convert back to the user locale-specific format as late as possible (mainly on the UI layer).
 
