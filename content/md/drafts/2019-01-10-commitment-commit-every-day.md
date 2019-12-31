@@ -66,6 +66,10 @@ Usually it is pretty easy to start with implementing the idea in the beginning, 
 
 So, in summary this was the good and rewarding experience, and I will continue doing this, and see where this path directs me. At least I hope by the end of the year I would have a few completed projects, at least used by myself, maybe inside the company or hopefully by the other people outside of my circle.
 
+
+### Future
+
+It is really not clear whether I will continue that process forever/long enough. There is the clear benefit of doing this activity, such as learning and building new things. But as per [GitHub stars won't pay your rent](https://medium.com/@kitze/github-stars-wont-pay-your-rent-8b348e12baed) it is currently really the case. While this activity requires a significant part of my *free* time, which means less time to the family, sport, reading, and other important and critical life activities. So will see how it goes over time.
 ****
 
 [1]
