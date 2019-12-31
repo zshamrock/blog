@@ -30,7 +30,7 @@ I had an experience working with Puppet, and at work, although unfortunately, we
 
 ### Show me the code
 
-Well, <i class="fa fa-github-square"></i> [ididitagain](https://github.com/zshamrock/ididitagain). 
+Well, <i class="fab fa-github"></i> [ididitagain](https://github.com/zshamrock/ididitagain). 
 
 [README.md](https://github.com/zshamrock/ididitagain/blob/master/README.md) will be the best place to start with, and explore then code in [roles](https://github.com/zshamrock/ididitagain/tree/master/roles) directory of the project.
 

@@ -14,10 +14,12 @@ I believe in full stack development, and in craftsmanship. My core principles wo
 Here I write about IT as an industry in general, best practices, about clean code and value of simplicity, the way I like to work or think how it should be. 
 
 You can find more about me on the following resources:
-- <i class="fa fa-linkedin-square"></i> [LinkedIn](https://nl.linkedin.com/in/akazlou)
-- <i class="fa fa-github-square"></i> [GitHub](https://github.com/zshamrock)
-- <i class="fa fa-twitter-square"></i> [Twitter](https://twitter.com/akazlou)
-- [Codingame](https://www.codingame.com/profile/ae433b2b7200a27dc94b3abe13ee3b2c803079)
-- [HackerRank](https://www.hackerrank.com/akazlou)
+- <i class="fab fa-linkedin-in fa-lg"></i> [LinkedIn](https://nl.linkedin.com/in/akazlou)
+- <i class="fab fa-github fa-lg"></i> [GitHub](https://github.com/zshamrock)
+- <i class="fab fa-twitter fa-lg"></i> [Twitter](https://twitter.com/akazlou)
+- <i class="fab fa-stack-overflow fa-lg"></i> [Stack Overflow](https://stackoverflow.com/users/729784/akazlou)
+- <i class="fas fa-gamepad fa-lg"></i> [Codingame](https://www.codingame.com/profile/ae433b2b7200a27dc94b3abe13ee3b2c803079)
+- <i class="fab fa-hackerrank fa-lg"></i> [HackerRank](https://www.hackerrank.com/akazlou)
+- <i class="fab fa-patreon fa-lg"></i> [Patreon](https://www.patreon.com/akazlou)
 
 If you would like to do a business with me together and want me to help your business or product to grow email at _aliaksandr (dot) kazlou (at) gmail (dot) com_.

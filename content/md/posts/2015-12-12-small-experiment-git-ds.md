@@ -317,4 +317,4 @@ And enjoyed the great symbiosis with the hosting system, which is not a surprise
 
 ### What has not been covered
 
-I have not covered web part using `Ring`, as well as deployment procedure using `Docker`. If you are interested to know more check the <i class="fa fa-github-square"></i> [source code](https://github.com/zshamrock/startup-prepublic) on the GitHub.
+I have not covered web part using `Ring`, as well as deployment procedure using `Docker`. If you are interested to know more check the <i class="fab fa-github"></i> [source code](https://github.com/zshamrock/startup-prepublic) on the GitHub.
