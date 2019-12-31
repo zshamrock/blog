@@ -1,6 +1,6 @@
 {:title "Skynet in Go and Clojure"
 :layout :post
-:tags ["practice" "clojure" "golang"]}
+:tags ["practice" "clojure" "go"]}
 
 ### Codingame
 
