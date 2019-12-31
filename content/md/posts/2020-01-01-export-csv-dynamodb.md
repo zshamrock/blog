@@ -1,15 +1,16 @@
 {:title "dynocsv: Export DynamoDB table into CSV"
 :layout :post
 :tags ["open source" "go" "dynamodb"]
+:enable-github-buttons true
 }
 
 This is the first post in the series of posts covering the Open Source projects I am working on.
 
 <div class="alert alert-info" role="alert">
-The common thing about all the projects is that they were built out of the necessity to support day to day operations on the main project I am working on and on my free time. And as the end result made me more productive and reduce the time to accomplish business tasks. And last but not least there was no viable already available alternative to provide the features I was looking for.
+The common thing about all the projects is that they were built out of the necessity to support day to day operations on the main project I am working on and in my free time. And as the result made me more productive and reduce the time to accomplish business tasks. And last but not least there was no viable already available alternative to provide the features I was looking for.
 </div>
 
-That one in particular covers [dynocsv](https://github.com/zshamrock/dynocsv), which allows to export DynamoDB table into the CSV file, either the whole table or part of it by query with hash/sort keys, both on table or index.
+That one in particular covers [dynocsv](https://github.com/zshamrock/dynocsv), which allows exporting DynamoDB table into the CSV file, either the whole table or part of it by query with hash/sort keys, both on table or index.
 
 ```
 NAME:
@@ -81,7 +82,7 @@ Note: for Snap you would need explicitly allow `aws-config-credetials` plug whic
 snap connect dynocsv:aws-config-credentials
 ```
 
-otherwise it fails to read the credentials and will fail with
+otherwise, it fails to read the credentials and will fail with
 
 > 2019/10/24 17:34:14 MissingRegion: could not find region configuration
    panic: MissingRegion: could not find region configuration
@@ -102,33 +103,33 @@ By default `Scan` operation is run to fetch all the data.
 If `--hash` and any of the `--sort` CLI arguments are provided,
 `Query` operation will be run to query the corresponding data based on the key conditions specified by `--hash` and `--sort` values. 
 
-Query can be run either on the table (default) or index (if `--index` argument is set).
+The query can be run either on the table (default) or index (if `--index` argument is set).
 
 ### CSV Headers
 
-As DynamoDB is a column-based family of DBs, technically each row could have different number of columns/attributes, with different names. And also DynamoDB only allows to fetch the description about attributes which are part of table/index hash or sort keys. So in that case it might not be possible to resolve all the attribute names (and so CSV headers) until all the data is read first. 
+As DynamoDB is a column-based family of DBs, technically each row could have a different number of columns/attributes, with different names. And also DynamoDB only allows fetching the description about attributes that are part of table/index hash or sort keys. So, in that case, it might not be possible to resolve all the attribute names (and so CSV headers) until all the data is read first. 
 
-And potentially the data size could be big enough to not fit in memory or be not practical to keep all data in memory. So currently it keeps first 1000 read records in memory in the assumption that all possible attributes will be seen up to that point. And so write the CSV header accordingly.
+And potentially the data size could be big enough to not fit in memory or be not practical to keep all data in memory. So currently it keeps the first 1000 read records in memory in the assumption that all possible attributes will be seen up to that point. And so write the CSV header accordingly.
 
-If even after 1000 records the new attribute is detected the tool outputs in the end of export the header line into `stdout` which you would need manually to replace with the existing CSV header row.
+If even after 1000 records the new attribute is detected the tool outputs at the end of export the header line into `stdout` which you would need manually to replace with the existing CSV header row.
 
 ### Attributes Order
 
-The attributes in the ouput CSV are sorted in the following order:
+The attributes in the output CSV are sorted in the following order:
 
 - if `--index` CLI argument has not been provided table hash/sort keys are coming first, then all available global secondary indexes hash/sort keys (in alphabetical order by index names), and then all the rest of the attributes sorted alphabetically
-- if `--index` CLI argument is set, the order will be the same as above with the exception that that index's hash/sort keys will come first before the table's hash/sort keys, then all the reamining other indexes' hash/sort keys, and the rest of the attributes sorted alphabetically as well
+- if `--index` CLI argument is set, the order will be the same as above with the exception that that index's hash/sort keys will come first before the table's hash/sort keys, then all the remaining other indexes' hash/sort keys, and the rest of the attributes sorted alphabetically as well
 
 ### Limits
 
-Currently there are the following limitations:
+Currently, there are the following limitations:
 
 - `String`, `Boolean`, `Number`, `Map`, `StringSet`, `NumberSet` and `List` data types are supported to export the data from, attributes with other data type (like binary) will still be present, but the value will be "" (empty string)
 - there is no pause or proper throttling according to the current set table's RCU, so you might need manually to increase the RCU value temporarily for the period of running the export
 
 - - -
 
-The tool is free, easy to install and use. Please, give it a try, and see if helps to solve your problem. Also feel free to create the feature request or report the bug 
-<a class="github-button" href="https://github.com/zshamrock/dynocsv/issues" data-size="large" aria-label="Issue zshamrock/dynocsv on GitHub">Issue</a>
+The tool is free, easy to install and use. Please, give it a try, and see if it helps to solve your problem. Also feel free to create the feature request or report the bug 
+<a class="github-button" href="https://github.com/zshamrock/dynocsv/issues" data-size="large" aria-label="Issue zshamrock/dynocsv on GitHub">Issue</a>.
 
-As well as start 
+As well as <a class="github-button" href="https://github.com/zshamrock/dynocsv" data-size="large" data-show-count="true" aria-label="Star zshamrock/dynocsv on GitHub">Star</a> or support on <i class="fab fa-patreon fa-lg"></i> [Patreon](https://www.patreon.com/akazlou).
