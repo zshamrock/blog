@@ -7,10 +7,13 @@
 This is the first post in the series of posts covering the Open Source projects I am working on.
 
 <div class="alert alert-info" role="alert">
-The common thing about all the projects is that they were built out of the necessity to support day to day operations on the main project I am working on and in my free time. And as the result made me more productive and reduce the time to accomplish business tasks. And last but not least there was no viable already available alternative to provide the features I was looking for.
+The common thing about all the projects is that they were built out of the necessity to support day to day operations on 
+the main project I am working on and in my free time. And as the result made me more productive and reduced the time to 
+accomplish business tasks. And last but not least there was no viable already available alternative to provide the 
+features I was looking for.
 </div>
 
-That one in particular covers [dynocsv](https://github.com/zshamrock/dynocsv), which allows exporting DynamoDB table into the CSV file, either the whole table or part of it by query with hash/sort keys, both on table or index.
+That post in particular covers [dynocsv](https://github.com/zshamrock/dynocsv), which allows exporting DynamoDB table into the CSV file, either the whole table or part of it by query with hash/sort keys, both on table or index.
 
 ```
 NAME:
@@ -109,16 +112,19 @@ The query can be run either on the table (default) or index (if `--index` argume
 
 As DynamoDB is a column-based family of DBs, technically each row could have a different number of columns/attributes, with different names. And also DynamoDB only allows fetching the description about attributes that are part of table/index hash or sort keys. So, in that case, it might not be possible to resolve all the attribute names (and so CSV headers) until all the data is read first. 
 
-And potentially the data size could be big enough to not fit in memory or be not practical to keep all data in memory. So currently it keeps the first 1000 read records in memory in the assumption that all possible attributes will be seen up to that point. And so write the CSV header accordingly.
+And potentially the data size could be big enough to not fit in memory or be not practical to keep all data in memory. 
+So currently it keeps the first 1000 read records in memory in the assumption that all possible attributes will be seen 
+up to that point. And so write the CSV headers accordingly.
 
-If even after 1000 records the new attribute is detected the tool outputs at the end of export the header line into `stdout` which you would need manually to replace with the existing CSV header row.
+If even after 1000 records the new attribute is detected the tool outputs at the end of export the headers line into `stdout` 
+which you would need manually to replace with the existing CSV headers row.
 
 ### Attributes Order
 
 The attributes in the output CSV are sorted in the following order:
 
-- if `--index` CLI argument has not been provided table hash/sort keys are coming first, then all available global secondary indexes hash/sort keys (in alphabetical order by index names), and then all the rest of the attributes sorted alphabetically
-- if `--index` CLI argument is set, the order will be the same as above with the exception that that index's hash/sort keys will come first before the table's hash/sort keys, then all the remaining other indexes' hash/sort keys, and the rest of the attributes sorted alphabetically as well
+- if `--index` CLI argument has not been provided table hash/sort keys are coming first, then all available global secondary indexes' hash/sort keys (in alphabetical order by index names), and then all the rest of the attributes sorted alphabetically
+- if `--index` CLI argument is set, the order will be the same as above with the exception that that index's hash/sort keys will come first before the table's hash/sort keys, then all the remaining other indexes' hash/sort keys, and the rest of the attributes sorted alphabetically
 
 ### Limits
 
