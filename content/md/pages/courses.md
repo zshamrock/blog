@@ -1,8 +1,7 @@
 {:title "Courses"
  :layout :page
  :page-index 0
- :navbar? true
- :new? true}
+ :navbar? true}
 
 ### Java Concurrency on Stepik platform (free)
 

@@ -1,6 +1,6 @@
 {:title "About"
  :layout :page
- :page-index 2
+ :page-index 3
  :navbar? true}
 
 Nice to meet you my reader!
@@ -10,6 +10,8 @@ Nice to meet you my reader!
 Let me introduce myself: my name is Alex, born in a nice [city](https://www.google.nl/maps/place/Gomel,+Belarus/@52.4229779,30.9860372,12z/data=!4m2!3m1!1s0x46d4699b50faf1a5:0x5ecca30fd2361396?hl=en) of Belarus. I love to build and develop software. And challenge the established so called rules the industry has. I believe in the value of simplicity, clean code, and that small team can achieve the results bigger companies can't do or do running over budget and time. 
 
 I believe in full stack development, and in craftsmanship. My core principles would be: simplicity, automation and visibility - is that keeping the code simple, automating all manual processes, and having the visibility on all the levels of the product development (how it grows, how decisions are made, how the system behaves in production) everything could be achieved much faster, with less cost and better quality.
+
+I am also <a href="https://www.youracclaim.com/badges/e00ebbba-1c8e-4e41-a43f-4646ecf69db2/public_url" target="_blank">Oracle Certified Master, Java SE 6 Developer</a> and <a href="/img/certificates/spring-framework.png" target="_blank">Certified Spring Professional</a>.
 
 Here I write about IT as an industry in general, best practices, about clean code and value of simplicity, the way I like to work or think how it should be. 
 
