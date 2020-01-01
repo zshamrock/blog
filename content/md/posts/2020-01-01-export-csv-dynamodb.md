@@ -6,14 +6,14 @@
 
 This is the first post in the series of posts covering the Open Source projects I am working on.
 
+That post in particular covers [dynocsv](https://github.com/zshamrock/dynocsv), which allows exporting DynamoDB table into the CSV file, either the whole table or part of it by query with hash/sort keys, both on table or index.
+
 <div class="alert alert-info" role="alert">
 The common thing about all the projects is that they were built out of the necessity to support day to day operations on 
 the main project I am working on and in my free time. And as the result made me more productive and reduced the time to 
 accomplish business tasks. And last but not least there was no viable already available alternative to provide the 
 features I was looking for.
 </div>
-
-That post in particular covers [dynocsv](https://github.com/zshamrock/dynocsv), which allows exporting DynamoDB table into the CSV file, either the whole table or part of it by query with hash/sort keys, both on table or index.
 
 ```
 NAME:
