@@ -1,6 +1,6 @@
 {:title "About"
  :layout :page
- :page-index 1
+ :page-index 2
  :navbar? true}
 
 Nice to meet you my reader!
