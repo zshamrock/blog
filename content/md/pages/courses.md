@@ -1,7 +1,9 @@
 {:title "Courses"
  :layout :page
  :page-index 0
- :navbar? true}
+ :navbar? true
+ :icon? true
+ :icon-name "laptop-code"}
 
 ### Java Concurrency on Stepik platform (free)
 

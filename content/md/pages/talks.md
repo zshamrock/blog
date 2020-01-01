@@ -1,7 +1,9 @@
 {:title "Talks"
  :layout :page
  :page-index 1
- :navbar? true}
+ :navbar? true
+ :icon? true
+ :icon-name "chalkboard-teacher"}
 
 Below is the list of my talks given at a different time and different places in the chronological order (from newest to oldest).
 

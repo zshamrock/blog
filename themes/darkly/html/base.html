@@ -53,6 +53,9 @@
                 {% if nav-page.new? %}
                     <span class="label label-danger">new</span>
                 {% endif %}
+                {% if nav-page.icon? %}
+                <i class="fas fa-{{nav-page.icon-name}} fa-sm"></i>
+                {% endif %}
                 </a>
                 </li>
                 {% endfor %}
