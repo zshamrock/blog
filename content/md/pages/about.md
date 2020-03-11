@@ -7,13 +7,17 @@ Nice to meet you my reader!
 
 <img src="/img/photo-blog-size.png" alt="Me">
 
-Let me introduce myself: my name is Alex, born in a nice [city](https://www.google.nl/maps/place/Gomel,+Belarus/@52.4229779,30.9860372,12z/data=!4m2!3m1!1s0x46d4699b50faf1a5:0x5ecca30fd2361396?hl=en) of Belarus. I love to build and develop software. And challenge the established so called rules the industry has. I believe in the value of simplicity, clean code, and that small team can achieve the results bigger companies can't do or do running over budget and time. 
+Let me introduce myself: my name is Alex, I love to build and develop software.
 
-I believe in full stack development, and in craftsmanship. My core principles would be: simplicity, automation and visibility - is that keeping the code simple, automating all manual processes, and having the visibility on all the levels of the product development (how it grows, how decisions are made, how the system behaves in production) everything could be achieved much faster, with less cost and better quality.
+Full-stack backend developer and architect. Clean coder. Polyglot software developer, both JVM (Java, Kotlin, Groovy, Clojure) and non-JVM (Go) languages. Open source contributor and developer. Constant learner. Online Java course author. JavaFX experimentator. Debian user. Junior Data Scientist.
+
+Expertise in AWS services, building distributed and real-time data processing systems, NoSQL, DevOps (Docker, Ansible, Terraform, Kubernetes).
+
+Following "The Twelve-Factor App", "You Build It, You Run It" and "The Boy Scout Rule" principles. 
 
 I am also <a href="https://www.youracclaim.com/badges/e00ebbba-1c8e-4e41-a43f-4646ecf69db2/public_url" target="_blank">Oracle Certified Master, Java SE 6 Developer</a> and <a href="/img/certificates/spring-framework.png" target="_blank">Certified Spring Professional</a>.
 
-Here I write about IT as an industry in general, best practices, about clean code and value of simplicity, the way I like to work or think how it should be. 
+Here I write about IT as an industry in general, best practices, about clean code and value of simplicity. 
 
 You can find more about me on the following resources:
 - <i class="fab fa-linkedin-in fa-lg"></i> [LinkedIn](https://nl.linkedin.com/in/akazlou)
