@@ -46,6 +46,7 @@
                 <li {% if home %} class="active" {% endif %}>
                     <a href="{{index-uri}}" title="Home" data-toggle="tooltip" data-placement="bottom">
                         <i class="fas fa-home fa-2x"></i>
+                        <span class="hidden-md hidden-lg text-uppercase text-justify">&nbsp;Home</span>
                     </a>
                 </li>
                 {% for nav-page in navbar-pages %}
@@ -58,15 +59,22 @@
                 {% if nav-page.new? %}
                 <span class="label label-danger">new</span>
                 {% endif %}
+                <span class="hidden-md hidden-lg text-uppercase text-justify">&nbsp;{{nav-page.title}}</span>
                 </a>
                 </li>
                 {% endfor %}
                 <li {% if archives %} class="active" {% endif %}>
                     <a href="{{archives-uri}}" title="Archives" data-toggle="tooltip" data-placement="bottom">
                         <i class="fas fa-archive fa-2x"></i>
+                        <span class="hidden-md hidden-lg text-uppercase text-justify">&nbsp;Archives</span>
                     </a>
                 </li>
-                <li><a href="{{rss-uri}}" title="RSS" data-toggle="tooltip" data-placement="bottom"><i class="fas fa-rss fa-2x"></i></a></li>
+                <li>
+                    <a href="{{rss-uri}}" title="RSS" data-toggle="tooltip" data-placement="bottom">
+                        <i class="fas fa-rss fa-2x"></i>
+                        <span class="hidden-md hidden-lg text-uppercase text-justify">&nbsp;RSS</span>
+                    </a>
+                </li>
             </ul>
         </div><!--/.nav-collapse -->
     </div><!--/.container-fluid -->
