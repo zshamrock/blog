@@ -1,7 +1,9 @@
 {:title "About"
  :layout :page
  :page-index 3
- :navbar? true}
+ :navbar? true
+ :icon? true
+ :icon-name "info"}
 
 Nice to meet you my reader!
 

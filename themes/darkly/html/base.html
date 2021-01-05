@@ -41,25 +41,26 @@
             <a class="navbar-brand social-icon" href="https://stackoverflow.com/users/729784/akazlou" target="_blank"><i class="fab fa-stack-overflow fa-2x"></i></a>
             <a class="navbar-brand social-icon" href="https://www.patreon.com/akazlou" target="_blank"><i class="fab fa-patreon fa-2x"></i></a>
         </div>
+<!--        TODO Add hint/popover on what each icon means!!!
+-->
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li {% if home %} class="active" {% endif %}><a href="{{index-uri}}">Home</a></li>
-                <li
-                {% if archives %} class="active" {% endif %}><a href="{{archives-uri}}">Archives</a></li>
+                <li {% if home %} class="active" {% endif %}><a href="{{index-uri}}"><i class="fas fa-home fa-2x"></i></a></li>
                 {% for nav-page in navbar-pages %}
                 <li
                 {%ifequal page.uri nav-page.uri %} class="active" {% endifequal %}>
-                <a href="{{nav-page.uri}}">{{nav-page.title}}
-                {% if nav-page.new? %}
-                    <span class="label label-danger">new</span>
-                {% endif %}
+                <a href="{{nav-page.uri}}">
                 {% if nav-page.icon? %}
-                <i class="fas fa-{{nav-page.icon-name}} fa-sm"></i>
+                <i class="fas fa-{{nav-page.icon-name}} fa-2x"></i>
+                {% endif %}
+                {% if nav-page.new? %}
+                <span class="label label-danger">new</span>
                 {% endif %}
                 </a>
                 </li>
                 {% endfor %}
-                <li><a href="{{rss-uri}}">RSS</a></li>
+                <li {% if archives %} class="active" {% endif %}><a href="{{archives-uri}}"><i class="fas fa-archive fa-2x"></i></a></li>
+                <li><a href="{{rss-uri}}"><i class="fas fa-rss fa-2x"></i></a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div><!--/.container-fluid -->
@@ -110,7 +111,7 @@
             </div>
         </div>
     </div>
-    <footer>Copyright &copy; 2015-2020 {{author}}
+    <footer>Copyright &copy; 2015-2021 {{author}}
         <p>Powered by <a href="http://cryogenweb.org">Cryogen</a></p></footer>
 </div>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
