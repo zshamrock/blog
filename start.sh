@@ -1,2 +1,2 @@
 #!/bin/bash
-lein ring server
+lein serve
