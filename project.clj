@@ -1,6 +1,6 @@
 (defproject blog "1.0.0"
             :description "Personal Blog"
-            :url "https://akazlou.com"
+            :url "https://akazlou.dev"
             :license {:name "Eclipse Public License"
                       :url "http://www.eclipse.org/legal/epl-v10.html"}
             :dependencies [[org.clojure/clojure "1.10.1"]

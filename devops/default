@@ -31,7 +31,7 @@ server {
 	# Add index.php to the list if you are using PHP
 	index index.html index.htm index.nginx-debian.html;
 
-	server_name akazlou.com www.akazlou.com;
+	server_name akazlou.dev www.akazlou.dev;
 
 	location / {
 		default_type "text/html";

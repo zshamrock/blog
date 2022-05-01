@@ -1,1 +1,1 @@
-My personal blog on https://akazlou.com/ about simplicity, practice and craft.
+My personal blog on https://akazlou.dev/ about simplicity, practice and craft.
